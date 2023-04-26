@@ -1,0 +1,136 @@
+{
+    "gitcommands" : [
+        {
+            "command": "git config --global user.name “[firstname lastname]”",
+            "description": "Sürüm geçmişinde kullanılacak adınızı belirler"
+        },
+        {
+            "command": "git config --global user.email “[valid-email]”",
+            "description": "Sürüm geçmişinde kullanılacak e-posta adresinizi belirler"
+        },
+        {
+            "command": "git config --global color.ui auto",
+            "description": "Git için otomatik komut satırı renklendirmesi ayarlar"
+        },
+        {
+            "command": "git init",
+            "description": "Mevcut bir dizini Git deposu olarak başlatır"
+        },
+        {
+            "command": "git clone [url]",
+            "description": "URL aracılığıyla barındırılan bir konumdan tüm depoyu kopyalar"
+        },
+        {
+            "command": "git status",
+            "description": "Çalışma dizinindeki değiştirilmiş dosyaları gösterir, bir sonraki işleminiz için hazırlanır"
+        },
+        {
+            "command": "git add [dosya-adi]",
+            "description": "Bir sonraki commit'e dahil edilecek bir dosya ekler"
+        },
+        {
+            "command": "git diff",
+            "description": "Değiştirilen ancak sahnelenmemiş şeylerin farkını gösterir"
+        },
+        {
+            "command": "git diff --staged",
+            "description": "Sahnelenen ancak henüz taahhüt edilmemiş olanın farkını gösterir"
+        },
+        {
+            "command": "git commit -m “[commit hakkında açıklama mesajınız]”",
+            "description": "Bir sonraki commit'e bir açıklama mesajı ekler"
+        },
+        {
+            "command": "git branch",
+            "description": "Mevcut dalları listeler"
+        },
+        {
+            "command": "git branch [branch-name]",
+            "description": "Yeni bir dal oluşturur"
+        },
+        {
+            "command": "git checkout",
+            "description": "Bir dal veya commit'e geçiş yapar"
+        },
+        {
+            "command": "git merge [branch]",
+            "description": "Belirtilen dalı mevcut dala birleştirir"
+        },
+        {
+            "command": "git log",
+            "description": "Tüm commit geçmişini gösterir"
+        },
+        {
+            "command": "git log branchB..branchA",
+            "description": "Belirtilen dallar arasındaki commit geçmişini gösterir"
+        },
+        {
+            "command": "git log --follow [dosya-adi]",
+            "description": "Belirtilen dosya ile ilgili commit geçmişini gösterir"
+        },
+        {
+            "command": "git diff branchB...branchA",
+            "description": "Belirtilen dallar arasındaki farkları gösterir"
+        },
+        {
+            "command": "git show [SHA]",
+            "description": "Belirtilen commit'in değişikliklerini gösterir"
+        },
+        {
+            "command": "git remote add [alias] [url]",
+            "description": "Uzak bir depoya bir takma ad ekler"
+        },
+        {
+            "command": "git fetch [alias]",
+            "description": "Uzak depodan değişiklikleri getirir, ancak yerel değişiklik yapmaz"
+        },
+        {
+            "command": "git merge [alias]/[branch]",
+            "description": "Uzak depodaki belirtilen dalı mevcut dala birleştirir"
+        },
+        {
+            "command": "git push [alias] [branch]",
+            "description": "Yapılan değişiklikleri uzak depoya yükler"
+        },
+        {
+            "command": "git pull",
+            "description": "Değişiklikleri uzak depodan getirir ve yerel dosyalara birleştirir"
+        },
+        {
+            "command": "git rm [dosya-adi]",
+            "description": "Belirtilen dosyayı siler ve bir sonraki commit'e dahil eder"
+        },
+        {
+            "command": "git mv [existing-path] [new-path]",
+            "description": "Belirtilen dosyanın adını veya konumunu değiştirir ve bir sonraki commit'e dahil eder"
+        },
+        {
+            "command": "git log --stat -M",
+            "description": "Dosya taşıma/değiştirme işlemlerini de dahil ederek commit geçmişini gösterir"
+        },
+        {
+            "command": "git rebase [branch]",
+            "description": "Belirtilen dalı mevcut dalın başına ekler"
+        },
+        {
+            "command": "git reset --hard [commit]",
+            "description": "Belirtilen commit'e geri döner ve tüm değişiklikleri siler"
+        },
+        {
+            "command": "git stash",
+            "description": "Yapılan ancak henüz taahhüt edilmemiş değişiklikleri geçici olarak saklar"
+        },
+        {
+            "command": "git stash list",
+            "description": "Saklanan tüm değişiklikleri listeler"
+        },
+        {
+            "command": "git stash pop",
+            "description": "En son saklanan değişiklikleri geri yükler"
+        },
+        {
+            "command": "git stash drop",
+            "description": "En son saklanan değişiklikleri siler"
+        }
+    ]
+}

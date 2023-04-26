@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white p-4 md:max-sm font-mono md:font-ui-monospace">
+    <div>
+        <div class="flex items-center mb-4">
+            <input type="text"
+                class="rounded-lg border-gray-800 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-600 text-white px-4 py-4 w-full"
+                placeholder="Yapmak istediğiniz işleme ait bir anahtar kelime girin örneğin 'sil' "
+                id="searchBox">
+        </div>
+        <ul class="flex divide-y divide-gray-800 justify-between" id="prAlani">
+            <a href="https://github.com/alicangunduz"><li class="py-4 bg-[#78866b] rounded-2xl m-5 w-2/4" id="line">
+                <div class="ml-2 text-xl font-bold select-all ">💪🏻 alicangunduz<p class="text-sm font-thin select-none">GitHub Hesabım üzerinden beni takip ederek destek olabilirsiniz</p></div>
+            </a></li>
+         <a href="https://twitter.com/alicangunduzdev">   <li class="py-4 bg-[#00ACEE] rounded-2xl m-5 w-2/4" id="line">
+                <div class="ml-2 text-xl font-bold select-all ">💪🏻 alicangunduzdev <p class="text-sm font-thin select-none">Twitter Hesabım üzerinden beni takip ederek destek olabilirsiniz</p></div>
+            </a></li>
+        </ul>
+        <ul class="divide-y divide-gray-800" id="commandList">
+
+        </ul>
+    </div>
+    <!-- pagination kutulari -->
+    <div class="flex justify-center mt-4">
+        <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-l" id="previous">
+            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M15 19l-7-7 7-7">
+                </path>
+            </svg>
+        </button>
+        <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-r" id="next">
+            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M9 5l7 7-7 7">
+                </path>
+            </svg>
+        </button>
+    </div>
+    <!-- <div x-data="{ show: false }" x-show="show"
+        x-init="localStorage.getItem('hideBanner') === null ? (setTimeout(() => show = true, 500)) : (show = false)"
+        x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0 scale-95 translate-y-2"
+        x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+        x-transition:leave-end="opacity-0 scale-95 translate-y-2"
+        class="transition transform fixed z-100 bottom-0 inset-x-0 pb-2 sm:pb-5">
+        <div class="max-w-screen-xl mx-auto px-2 sm:px-4">
+            <div class="p-2 rounded-lg bg-[#7149C6] shadow-lg sm:p-3">
+                <div class="flex items-center justify-between flex-wrap">
+                    <div class="w-0 flex-1 flex items-center">
+                        <p class="ml-3 font-medium text-white truncate">
+                            <span class="hidden lg:inline text-gray-400">
+                                <strong class="text-white font-semibold mr-1">GitHub üzerinden beni takip ederek destek
+                                    olabilirsiniz 🚀</strong>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+                        <div class="rounded-md shadow-sm">
+                            <a href="https://github.com/alicangunduz"
+                                class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-gray-900 bg-white hover:text-gray-800 focus:outline-none focus:underline">
+                                Hesaba git 🫂
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+<script src="main.js"></script>
+
+</html>
