@@ -68,7 +68,7 @@ List the letters entered in the search box field in
 const searchBox = document.getElementById('searchBox');
 
 searchBox.addEventListener('keyup', (e) => {
-   if (e.key === "Backspace" || searchBox.value === "") {
+   if (searchBox.value === "") {
          displayCommands(currentPage); // Define the displayCommands function
          return;
     }
