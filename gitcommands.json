@@ -2,11 +2,11 @@
     "gitcommands" : [
         {
             "command": "git config --global user.name “[firstname lastname]”",
-            "description": "Sürüm geçmişinde kullanılacak adınızı belirler"
+            "description": "Versiyon geçmişinde kullanılacak adınızı belirler"
         },
         {
             "command": "git config --global user.email “[valid-email]”",
-            "description": "Sürüm geçmişinde kullanılacak e-posta adresinizi belirler"
+            "description": "Versiyon geçmişinde kullanılacak e-posta adresinizi belirler"
         },
         {
             "command": "git config --global color.ui auto",
