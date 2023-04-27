@@ -76,7 +76,10 @@ searchBox.addEventListener("keyup", (e) => {
   let search = searchBox.value.toLowerCase();
 
   let filteredCommands = command.filter((command) => {
-    return command.description.toLowerCase().includes(search);
+    return (
+      command.description.toLowerCase().includes(search) ||
+      command.command.toLowerCase().includes(search)
+    );
   });
 
   commandList.innerHTML = "";
