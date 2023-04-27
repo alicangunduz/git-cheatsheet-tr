@@ -20,7 +20,8 @@ async function getCommands() {
 
 
 let currentPage = 1;
-const itemsPerPage = 8; // Number of items to show per page
+const itemsPerPage = 7; // Number of items to show per page
+let currentPageDom = document.getElementById("currentPage");
 
 async function displayCommands(page) {
     await getCommands();
@@ -28,7 +29,7 @@ async function displayCommands(page) {
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const commandsToDisplay = command.slice(startIndex, endIndex);
-
+    currentPageDom.innerText = page + " of " + Math.ceil(command.length / itemsPerPage);
     commandList.innerHTML = "";
 
     for (let i = 0; i < commandsToDisplay.length; i++) {
