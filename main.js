@@ -67,10 +67,12 @@ List the letters entered in the search box field in
  the command.description field letter by letter on the page
 */
 const searchBox = document.getElementById('searchBox');
+const emptySearch = document.getElementById('emptySearch');
 
 searchBox.addEventListener('keyup', (e) => {
    if (searchBox.value === "") {
          displayCommands(currentPage); // Define the displayCommands function
+         emptySearch.innerHTML = "";
          return;
     }
     let search = searchBox.value.toLowerCase();
@@ -88,5 +90,16 @@ searchBox.addEventListener('keyup', (e) => {
                 <div class="ml-2 text-xl font-bold select-all">${filteredCommands[i].command}<p class="text-sm font-thin select-none">${filteredCommands[i].description}</p></div>
             </li>
         `;
+    }
+
+    //  Empty search result
+    if (filteredCommands.length === 0) {
+        emptySearch.innerHTML = `
+        <br>
+        <br>
+            <div class="text-2xl font-bold text-center">Sonuç bulunamadı 😥</div>
+        `;
+    } else {
+        emptySearch.innerHTML = "";
     }
 });
