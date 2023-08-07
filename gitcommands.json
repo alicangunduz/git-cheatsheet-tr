@@ -13,7 +13,7 @@
             "description": "Git için otomatik komut satırı renklendirmesi ayarlar"
         },
         {
-            "command":"git config --global core.editor “[editorname]”",
+            "command":"git config --global core.editor [editorname]",
             "description":"Git için varsayılan metin düzenleyiciyi belirler"
         },
         {
