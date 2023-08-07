@@ -13,6 +13,10 @@
             "description": "Git için otomatik komut satırı renklendirmesi ayarlar"
         },
         {
+            "command":"git config --global core.editor “[editorname]”",
+            "description":"Git için varsayılan metin düzenleyiciyi belirler"
+        },
+        {
             "command": "git init",
             "description": "Mevcut bir dizini Git deposu olarak başlatır"
         },
@@ -49,6 +53,10 @@
             "description": "Yeni bir dal oluşturur"
         },
         {
+            "command": "git branch -m [new-branch-name]",
+            "description": "Mevcut dalın adını değiştirir"
+        },
+        {
             "command": "git checkout",
             "description": "Bir dal veya commit'e geçiş yapar"
         },
@@ -69,6 +77,14 @@
             "description": "Belirtilen dosya ile ilgili commit geçmişini gösterir"
         },
         {
+            "command": "git log --pretty=oneline",
+            "description": "Commit geçmişindeki commitlerin hash numarasını ve mesajını tek satırda gösterir"
+        },
+        {
+            "command": "git log --all --oneline --graph",
+            "description": "Tüm dalları ve commitleri tek satırda ve grafiksel olarak görselleştirerek gösterir"
+        },
+        {
             "command": "git diff branchB...branchA",
             "description": "Belirtilen dallar arasındaki farkları gösterir"
         },
@@ -79,6 +95,14 @@
         {
             "command": "git remote add [alias] [url]",
             "description": "Uzak bir depoya bir takma ad ekler"
+        },
+        {
+            "command": "git remote rename [old-alias] [new-alias]",
+            "description": "Uzak bir deponun takma adını değiştirir"
+        },
+        {
+            "command": "git remote show [alias]",
+            "description": "Belirtilen uzak depo hakkında detaylı bilgileri gösterir"
         },
         {
             "command": "git fetch [alias]",
